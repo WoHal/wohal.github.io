@@ -3,17 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | Icarus</title>
+  <title>Web Worker | Icarus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo theme - Icarus">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Icarus">
-<meta property="og:url" content="http://wohal.github.io/archives/2015/index.html">
+  <meta name="description" content="web worker的优劣:
+优:
+可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
+可以在worker中通过importScripts(url)加载另外的脚本文件;
+可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
+可以使用XMLHttpRequ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web Worker">
+<meta property="og:url" content="http://wohal.github.io/2015/12/17/web-worker/index.html">
 <meta property="og:site_name" content="Icarus">
-<meta property="og:description" content="Hexo theme - Icarus">
+<meta property="og:description" content="web worker的优劣:
+优:
+可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
+可以在worker中通过importScripts(url)加载另外的脚本文件;
+可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
+可以使用XMLHttpRequ">
+<meta property="og:updated_time" content="2015-12-17T13:38:21.071Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Icarus">
-<meta name="twitter:description" content="Hexo theme - Icarus">
+<meta name="twitter:title" content="Web Worker">
+<meta name="twitter:description" content="web worker的优劣:
+优:
+可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
+可以在worker中通过importScripts(url)加载另外的脚本文件;
+可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
+可以使用XMLHttpRequ">
   
   
     <link rel="icon" href="favicon.png">
@@ -133,186 +149,88 @@
 </aside>
 
       
-      <section id="main">
-      <div class="archive-year-wrap">
-        <a href="/archives/2015" class="archive-year">2015</a>
-      </div>
-      <section class="archives-wrap">
-        <div class="archives">
+      <section id="main"><article id="post-web-worker" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
     
-    <div class="archive-article-thumbnail">
-      <a href="/2015/12/17/hello-world/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-    </div>
     
-    <header class="archive-article-header">
-      
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      Web Worker
     </h1>
   
 
-      
-        
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/hello-world/">
-      <time datetime="2015-12-17T15:57:05.142Z" itemprop="datePublished">Dec 17</time>
-    </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
-  
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    
-    <div class="archive-article-thumbnail">
-      <a href="/2015/12/17/web-worker/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-    </div>
-    
-    <header class="archive-article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/web-worker/">Web Worker</a>
-    </h1>
-  
-
-      
-        
-  <div class="archive-article-date">
+        <div class="article-meta">
+          
+  <div class="article-date">
     <i class="fa fa-calendar"></i>
     <a href="/2015/12/17/web-worker/">
-      <time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">Dec 17</time>
+      <time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">2015-12-17</time>
     </a>
   </div>
 
 
-      
-    </header>
-  </div>
-</article>
-  
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
+          
+        </div>
+      </header>
     
-    <div class="archive-article-thumbnail">
-      <a href="/2015/12/17/sublime中的闭合HTML标签/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>web worker的优劣:</p>
+<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
+<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
+<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
+<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
+<li>可以使用XMLHttpRequest来发送请求;</li>
+<li>可以访问navigator的部分属性</li>
+</ol>
+<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
+<li>不能跨域加载JS;</li>
+<li>worker内代码不能访问DOM;</li>
+<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
+<li>不是每个浏览器都支持这个新特性</li>
+</ol>
+
+      
     </div>
-    
-    <header class="archive-article-header">
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/17/web-worker/" data-id="ciiafp13r0003c4fbw0yf5l4p" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/sublime中的闭合HTML标签/">sublime下的HTML标签自动补全后不能闭合</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
-      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/17/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/sublime中的闭合HTML标签/">
-      <time datetime="2015-12-17T15:57:02.561Z" itemprop="datePublished">Dec 17</time>
-    </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
-  
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    
-    <div class="archive-article-thumbnail">
-      <a href="/2015/12/17/native-code/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-    </div>
-    
-    <header class="archive-article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/native-code/">Javascript Native Code</a>
-    </h1>
-  
-
-      
+          Hello World
         
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/native-code/">
-      <time datetime="2015-12-17T15:57:02.558Z" itemprop="datePublished">Dec 17</time>
+      </div>
     </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
   
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    
-    <div class="archive-article-thumbnail">
-      <a href="/2015/12/17/bubbling-capturing/" class="thumbnail">
   
-    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
-)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
-  
-</a>
-    </div>
-    
-    <header class="archive-article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/bubbling-capturing/">Bubbling and Capturing</a>
-    </h1>
-  
-
-      
-        
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/bubbling-capturing/">
-      <time datetime="2015-12-17T15:57:02.553Z" itemprop="datePublished">Dec 17</time>
+    <a href="/2015/12/17/sublime中的闭合HTML标签/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">sublime下的HTML标签自动补全后不能闭合</div>
     </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
   
-    </div></section>
-  </section>
+</nav>
+
+
+  
+</article>
+
+
+</section>
       
         <aside id="sidebar">
   
