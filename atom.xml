@@ -4,7 +4,7 @@
   <subtitle><![CDATA[record my steps]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://wohal.github.io/"/>
-  <updated>2015-12-19T04:23:14.149Z</updated>
+  <updated>2015-12-19T05:01:06.528Z</updated>
   <id>http://wohal.github.io/</id>
   
   <author>
@@ -15,11 +15,96 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Web Worker]]></title>
+    <link href="http://wohal.github.io/2015/12/19/web-worker/"/>
+    <id>http://wohal.github.io/2015/12/19/web-worker/</id>
+    <published>2015-12-19T05:01:06.528Z</published>
+    <updated>2015-12-19T05:01:06.528Z</updated>
+    <content type="html"><![CDATA[<p>web worker的优劣:</p>
+<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
+<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
+<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
+<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
+<li>可以使用XMLHttpRequest来发送请求;</li>
+<li>可以访问navigator的部分属性</li>
+</ol>
+<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
+<li>不能跨域加载JS;</li>
+<li>worker内代码不能访问DOM;</li>
+<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
+<li>不是每个浏览器都支持这个新特性</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>web worker的优劣:</p>
+<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
+<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过po]]>
+    </summary>
+    
+      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[sublime下的HTML标签自动补全后不能闭合]]></title>
+    <link href="http://wohal.github.io/2015/12/19/sublime%E4%B8%AD%E7%9A%84%E9%97%AD%E5%90%88HTML%E6%A0%87%E7%AD%BE/"/>
+    <id>http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/</id>
+    <published>2015-12-19T04:59:34.599Z</published>
+    <updated>2015-12-19T04:59:34.599Z</updated>
+    <content type="html"><![CDATA[<p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下]]>
+    </summary>
+    
+      <category term="sublime" scheme="http://wohal.github.io/tags/sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Javascript Native Code]]></title>
+    <link href="http://wohal.github.io/2015/12/19/native-code/"/>
+    <id>http://wohal.github.io/2015/12/19/native-code/</id>
+    <published>2015-12-19T04:57:43.416Z</published>
+    <updated>2015-12-19T04:57:43.416Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ol>
+<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span]]>
+    </summary>
+    
+      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JavaScript设计模式]]></title>
+    <link href="http://wohal.github.io/2015/12/19/javascript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wohal.github.io/2015/12/19/javascript设计模式/</id>
+    <published>2015-12-19T04:57:27.820Z</published>
+    <updated>2015-12-19T04:57:27.820Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> Validator = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.cache = [];  <span class="comment">// 保存效验规则</span></span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span>(<span class="params">dom,rules</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">rule</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strategyAry = rule.strategy.split(<span class="string">":"</span>);</span><br><span class="line">            <span class="keyword">var</span> errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                <span class="keyword">return</span> strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, validatorFunc; validatorFunc = <span class="keyword">this</span>.cache[i++]; ) &#123;</span><br><span class="line">    <span class="keyword">var</span> msg = validatorFunc(); <span class="comment">// 开始效验 并取得效验后的返回信息</span></span><br><span class="line">    <span class="keyword">if</span>(msg) &#123;</span><br><span class="line">        <span class="keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 代码调用</span></span><br><span class="line"><span class="keyword">var</span> registerForm = <span class="built_in">document</span>.getElementById(<span class="string">"registerForm"</span>);</span><br><span class="line"><span class="keyword">var</span> validateFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> validator = <span class="keyword">new</span> Validator(); <span class="comment">// 创建一个Validator对象</span></span><br><span class="line">    <span class="comment">/* 添加一些效验规则 */</span></span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: <span class="string">'isNotEmpty'</span>,errorMsg:<span class="string">'用户名不能为空'</span>&#125;,</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'用户名长度不能小于6位'</span>&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'密码长度不能小于6位'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: <span class="string">'mobileFormat'</span>,errorMsg:<span class="string">'手机号格式不正确'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validator.start(); <span class="comment">// 获得效验结果</span></span><br><span class="line">    <span class="keyword">return</span> errorMsg; <span class="comment">// 返回效验结果</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点击确定提交</span></span><br><span class="line">registerForm.onsubmit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validateFunc();</span><br><span class="line">    <span class="keyword">if</span>(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ol>
+<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class]]>
+    </summary>
+    
+      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[React]]></title>
     <link href="http://wohal.github.io/2015/12/19/react/"/>
     <id>http://wohal.github.io/2015/12/19/react/</id>
-    <published>2015-12-19T04:23:14.149Z</published>
-    <updated>2015-12-19T04:23:14.149Z</updated>
+    <published>2015-12-19T04:55:03.013Z</published>
+    <updated>2015-12-19T04:55:03.013Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/03/react.html</a></p>
 <ul>
 <li><p>设置state</p>
@@ -147,56 +232,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[JavaScript设计模式]]></title>
-    <link href="http://wohal.github.io/2015/12/19/javascript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wohal.github.io/2015/12/19/javascript设计模式/</id>
-    <published>2015-12-19T04:22:40.824Z</published>
-    <updated>2015-12-19T04:22:40.824Z</updated>
-    <content type="html"><![CDATA[<ol>
-<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> Validator = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.cache = [];  <span class="comment">// 保存效验规则</span></span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span>(<span class="params">dom,rules</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">rule</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strategyAry = rule.strategy.split(<span class="string">":"</span>);</span><br><span class="line">            <span class="keyword">var</span> errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                <span class="keyword">return</span> strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, validatorFunc; validatorFunc = <span class="keyword">this</span>.cache[i++]; ) &#123;</span><br><span class="line">    <span class="keyword">var</span> msg = validatorFunc(); <span class="comment">// 开始效验 并取得效验后的返回信息</span></span><br><span class="line">    <span class="keyword">if</span>(msg) &#123;</span><br><span class="line">        <span class="keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 代码调用</span></span><br><span class="line"><span class="keyword">var</span> registerForm = <span class="built_in">document</span>.getElementById(<span class="string">"registerForm"</span>);</span><br><span class="line"><span class="keyword">var</span> validateFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> validator = <span class="keyword">new</span> Validator(); <span class="comment">// 创建一个Validator对象</span></span><br><span class="line">    <span class="comment">/* 添加一些效验规则 */</span></span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: <span class="string">'isNotEmpty'</span>,errorMsg:<span class="string">'用户名不能为空'</span>&#125;,</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'用户名长度不能小于6位'</span>&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'密码长度不能小于6位'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: <span class="string">'mobileFormat'</span>,errorMsg:<span class="string">'手机号格式不正确'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validator.start(); <span class="comment">// 获得效验结果</span></span><br><span class="line">    <span class="keyword">return</span> errorMsg; <span class="comment">// 返回效验结果</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点击确定提交</span></span><br><span class="line">registerForm.onsubmit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validateFunc();</span><br><span class="line">    <span class="keyword">if</span>(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<ol>
-<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class]]>
-    </summary>
-    
-      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Web Worker]]></title>
-    <link href="http://wohal.github.io/2015/12/19/web-worker/"/>
-    <id>http://wohal.github.io/2015/12/19/web-worker/</id>
-    <published>2015-12-19T04:20:18.595Z</published>
-    <updated>2015-12-19T04:20:18.595Z</updated>
-    <content type="html"><![CDATA[<p>web worker的优劣:</p>
-<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
-<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
-<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
-<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
-<li>可以使用XMLHttpRequest来发送请求;</li>
-<li>可以访问navigator的部分属性</li>
-</ol>
-<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
-<li>不能跨域加载JS;</li>
-<li>worker内代码不能访问DOM;</li>
-<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
-<li>不是每个浏览器都支持这个新特性</li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>web worker的优劣:</p>
-<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
-<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过po]]>
-    </summary>
-    
-      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Bubbling and Capturing]]></title>
     <link href="http://wohal.github.io/2015/12/19/bubbling-capturing/"/>
     <id>http://wohal.github.io/2015/12/19/bubbling-capturing/</id>
@@ -233,41 +268,6 @@
 <h2 id="1-__u4E8B_u4EF6"><a href="#1-__u4E8B_u4EF6" class="headerlink" title="1. 事件"></a>1. 事件</h2><p>事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。<br>然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发<code>click</code>事件，即DOM元素产生了冒泡。</p>
 <h2 id="2-_u4E8B_u4EF6_u673A_u5236"><a href="#2-_u4E8B_u4EF6_u673A_u5236" class="headerlink" title="2.事件机制"></a>2.事件机制</h2><p><strong>事件捕获</strong>——父元素先触发，子元素后触发<br><strong>事件冒泡</strong>——子元素先触发，父元素后触发<br>]]>
     
-    </summary>
-    
-      <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[sublime下的HTML标签自动补全后不能闭合]]></title>
-    <link href="http://wohal.github.io/2015/12/17/sublime%E4%B8%AD%E7%9A%84%E9%97%AD%E5%90%88HTML%E6%A0%87%E7%AD%BE/"/>
-    <id>http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/</id>
-    <published>2015-12-17T15:57:02.561Z</published>
-    <updated>2015-12-17T13:46:54.081Z</updated>
-    <content type="html"><![CDATA[<p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下]]>
-    </summary>
-    
-      <category term="sublime" scheme="http://wohal.github.io/tags/sublime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Javascript Native Code]]></title>
-    <link href="http://wohal.github.io/2015/12/17/native-code/"/>
-    <id>http://wohal.github.io/2015/12/17/native-code/</id>
-    <published>2015-12-17T15:57:02.558Z</published>
-    <updated>2015-12-17T13:40:43.943Z</updated>
-    <content type="html"><![CDATA[<ol>
-<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<ol>
-<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span]]>
     </summary>
     
       <category term="javascript" scheme="http://wohal.github.io/tags/javascript/"/>

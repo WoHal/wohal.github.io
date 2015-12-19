@@ -134,8 +134,265 @@
 
       
       <section id="main">
+      <article id="post-web-worker" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      
+	
+		<a href="/2015/12/19/web-worker/" itemprop="url"><img src="http://blog.teamtreehouse.com/wp-content/uploads/2013/01/workers-feature.png" class="article-banner"></a>
+	
+
+
+
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/web-worker/">Web Worker</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/web-worker/">
+      <time datetime="2015-12-19T05:01:06.528Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>web worker的优劣:</p>
+<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
+<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
+<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
+<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
+<li>可以使用XMLHttpRequest来发送请求;</li>
+<li>可以访问navigator的部分属性</li>
+</ol>
+<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
+<li>不能跨域加载JS;</li>
+<li>worker内代码不能访问DOM;</li>
+<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
+<li>不是每个浏览器都支持这个新特性</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/web-worker/" data-id="ciiclvlx20006hcfbpe8698ps" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/web-worker/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="post-sublime中的闭合HTML标签" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      
+	
+		<a href="/2015/12/19/sublime中的闭合HTML标签/" itemprop="url"><img src="http://www.hutchhouse.com/wp-content/uploads/2014/08/sublime-text.jpg" class="article-banner"></a>
+	
+
+
+
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/sublime中的闭合HTML标签/">sublime下的HTML标签自动补全后不能闭合</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/sublime中的闭合HTML标签/">
+      <time datetime="2015-12-19T04:59:34.599Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/" data-id="ciiclvlx50008hcfby2cbvakq" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="post-native-code" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      
+	
+		<a href="/2015/12/19/native-code/" itemprop="url"><img src="http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3" class="article-banner"></a>
+	
+
+
+
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/native-code/">Javascript Native Code</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/native-code/">
+      <time datetime="2015-12-19T04:57:43.416Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <ol>
+<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/native-code/" data-id="ciiclvlxb000dhcfbvp1icle9" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/native-code/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="post-javascript设计模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      
+	
+		<a href="/2015/12/19/javascript设计模式/" itemprop="url"><img src="http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3" class="article-banner"></a>
+	
+
+
+
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/javascript设计模式/">JavaScript设计模式</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/javascript设计模式/">
+      <time datetime="2015-12-19T04:57:27.820Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <ol>
+<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> Validator = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.cache = [];  <span class="comment">// 保存效验规则</span></span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span>(<span class="params">dom,rules</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">rule</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strategyAry = rule.strategy.split(<span class="string">":"</span>);</span><br><span class="line">            <span class="keyword">var</span> errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                <span class="keyword">return</span> strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, validatorFunc; validatorFunc = <span class="keyword">this</span>.cache[i++]; ) &#123;</span><br><span class="line">    <span class="keyword">var</span> msg = validatorFunc(); <span class="comment">// 开始效验 并取得效验后的返回信息</span></span><br><span class="line">    <span class="keyword">if</span>(msg) &#123;</span><br><span class="line">        <span class="keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 代码调用</span></span><br><span class="line"><span class="keyword">var</span> registerForm = <span class="built_in">document</span>.getElementById(<span class="string">"registerForm"</span>);</span><br><span class="line"><span class="keyword">var</span> validateFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> validator = <span class="keyword">new</span> Validator(); <span class="comment">// 创建一个Validator对象</span></span><br><span class="line">    <span class="comment">/* 添加一些效验规则 */</span></span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: <span class="string">'isNotEmpty'</span>,errorMsg:<span class="string">'用户名不能为空'</span>&#125;,</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'用户名长度不能小于6位'</span>&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'密码长度不能小于6位'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: <span class="string">'mobileFormat'</span>,errorMsg:<span class="string">'手机号格式不正确'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validator.start(); <span class="comment">// 获得效验结果</span></span><br><span class="line">    <span class="keyword">return</span> errorMsg; <span class="comment">// 返回效验结果</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点击确定提交</span></span><br><span class="line">registerForm.onsubmit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validateFunc();</span><br><span class="line">    <span class="keyword">if</span>(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciiclvlxe000fhcfb7ca02e6v" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/javascript设计模式/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
       <article id="post-react" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      
+	
+		<a href="/2015/12/19/react/" itemprop="url"><img src="http://www.reiyukai-usa.org/wp-content/uploads/2011/02/REACT-logo.jpg" class="article-banner"></a>
+	
+
+
+
     
     
     
@@ -152,7 +409,7 @@
   <div class="article-date">
     <i class="fa fa-calendar"></i>
     <a href="/2015/12/19/react/">
-      <time datetime="2015-12-19T04:23:14.149Z" itemprop="datePublished">2015-12-19</time>
+      <time datetime="2015-12-19T04:55:03.013Z" itemprop="datePublished">2015-12-19</time>
     </a>
   </div>
 
@@ -189,124 +446,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/react/" data-id="ciiclnqsv000bqwfbj4lhoo6z" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/react/" data-id="ciiclvlx9000bhcfbxsx50oyh" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/19/react/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-javascript设计模式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/19/javascript设计模式/">JavaScript设计模式</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/19/javascript设计模式/">
-      <time datetime="2015-12-19T04:22:40.824Z" itemprop="datePublished">2015-12-19</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <ol>
-<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> Validator = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.cache = [];  <span class="comment">// 保存效验规则</span></span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span>(<span class="params">dom,rules</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">rule</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strategyAry = rule.strategy.split(<span class="string">":"</span>);</span><br><span class="line">            <span class="keyword">var</span> errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                <span class="keyword">return</span> strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, validatorFunc; validatorFunc = <span class="keyword">this</span>.cache[i++]; ) &#123;</span><br><span class="line">    <span class="keyword">var</span> msg = validatorFunc(); <span class="comment">// 开始效验 并取得效验后的返回信息</span></span><br><span class="line">    <span class="keyword">if</span>(msg) &#123;</span><br><span class="line">        <span class="keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 代码调用</span></span><br><span class="line"><span class="keyword">var</span> registerForm = <span class="built_in">document</span>.getElementById(<span class="string">"registerForm"</span>);</span><br><span class="line"><span class="keyword">var</span> validateFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> validator = <span class="keyword">new</span> Validator(); <span class="comment">// 创建一个Validator对象</span></span><br><span class="line">    <span class="comment">/* 添加一些效验规则 */</span></span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: <span class="string">'isNotEmpty'</span>,errorMsg:<span class="string">'用户名不能为空'</span>&#125;,</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'用户名长度不能小于6位'</span>&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'密码长度不能小于6位'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: <span class="string">'mobileFormat'</span>,errorMsg:<span class="string">'手机号格式不正确'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validator.start(); <span class="comment">// 获得效验结果</span></span><br><span class="line">    <span class="keyword">return</span> errorMsg; <span class="comment">// 返回效验结果</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点击确定提交</span></span><br><span class="line">registerForm.onsubmit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validateFunc();</span><br><span class="line">    <span class="keyword">if</span>(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciiclnqt1000fqwfb09cs0apx" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/19/javascript设计模式/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-web-worker" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/19/web-worker/">Web Worker</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/19/web-worker/">
-      <time datetime="2015-12-19T04:20:18.595Z" itemprop="datePublished">2015-12-19</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>web worker的优劣:</p>
-<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
-<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
-<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
-<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
-<li>可以使用XMLHttpRequest来发送请求;</li>
-<li>可以访问navigator的部分属性</li>
-</ol>
-<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
-<li>不能跨域加载JS;</li>
-<li>worker内代码不能访问DOM;</li>
-<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
-<li>不是每个浏览器都支持这个新特性</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/web-worker/" data-id="ciiclnqso0006qwfb6oj8h8kf" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/19/web-worker/#disqus_thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -359,111 +501,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/bubbling-capturing/" data-id="ciiclnqrv0000qwfbu5q61jcm" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/bubbling-capturing/" data-id="ciiclvlwa0000hcfb02z33jax" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/19/bubbling-capturing/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-sublime中的闭合HTML标签" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/sublime中的闭合HTML标签/">sublime下的HTML标签自动补全后不能闭合</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/sublime中的闭合HTML标签/">
-      <time datetime="2015-12-17T15:57:02.561Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/" data-id="ciiclnqsr0008qwfb2vn4at0o" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-native-code" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/native-code/">Javascript Native Code</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/native-code/">
-      <time datetime="2015-12-17T15:57:02.558Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <ol>
-<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/native-code/" data-id="ciiclnqsy000dqwfbyvf3l61q" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/native-code/#disqus_thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -488,17 +528,51 @@
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/react/" class="thumbnail">
+              <a href="/2015/12/19/web-worker/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://www.deardorffdigital.com/sites/default/files/styles/single_insight_image/public/insights/webworkers.jpg?itok=WIIKQOId)" alt="Web Worker" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:23:14.149Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
+              <p class="item-date"><time datetime="2015-12-19T05:01:06.528Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/sublime中的闭合HTML标签/" class="thumbnail">
+  
+    <span style="background-image:url(https://cdn.tutsplus.com/net/uploads/legacy/1038_sublime/sublime.png)" alt="sublime下的HTML标签自动补全后不能闭合" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/sublime中的闭合HTML标签/" class="title">sublime下的HTML标签自动补全后不能闭合</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:59:34.599Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/native-code/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3)" alt="Javascript Native Code" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/native-code/" class="title">Javascript Native Code</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:57:43.416Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -507,7 +581,7 @@
             <div class="item-thumbnail">
               <a href="/2015/12/19/javascript设计模式/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3)" alt="JavaScript设计模式" class="thumbnail-image"></span>
   
 </a>
             </div>
@@ -515,59 +589,24 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/javascript设计模式/" class="title">JavaScript设计模式</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:22:40.824Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:57:27.820Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/web-worker/" class="thumbnail">
+              <a href="/2015/12/19/react/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:20:18.595Z" itemprop="datePublished">2015-12-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/19/bubbling-capturing/" class="thumbnail">
-  
-    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
-)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
+    <span style="background-image:url(http://www.reiyukai-usa.org/wp-content/uploads/2011/02/REACT-logo.jpg)" alt="React" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/bubbling-capturing/" class="title">Bubbling and Capturing</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:19:36.146Z" itemprop="datePublished">2015-12-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/17/sublime中的闭合HTML标签/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/sublime中的闭合HTML标签/" class="title">sublime下的HTML标签自动补全后不能闭合</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:02.561Z" itemprop="datePublished">2015-12-17</time></p>
+              <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:55:03.013Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         

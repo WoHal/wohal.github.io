@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Javascript Native Code | WoHal&#39;s Blog</title>
+  <title>sublime下的HTML标签自动补全后不能闭合 | WoHal&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="toString1234567891011121314var a = 123,    b = &quot;hah&quot;,    c = function() &amp;#123;        console.log(&quot;lol&quot;);    &amp;#125;,    d = &amp;#123;        first: &apos;hel&apos;    &amp;#125;,    e = true;toString.call(a);   // [ob">
+  <meta name="description" content="使用sublime的自动补全功能，但是发现meta、link等标签不能够自动闭合，百度了一下找到了解决办法：Package Settings -&amp;gt; Emmet -&amp;gt; Settings-User 添加如下代码:1&amp;#123;&amp;#10;      &amp;#34;syntaxProfiles&amp;#34;: &amp;#123;&amp;#10;          // Enable XHTML dialect f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript Native Code">
-<meta property="og:url" content="http://wohal.github.io/2015/12/17/native-code/index.html">
+<meta property="og:title" content="sublime下的HTML标签自动补全后不能闭合">
+<meta property="og:url" content="http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/index.html">
 <meta property="og:site_name" content="WoHal's Blog">
-<meta property="og:description" content="toString1234567891011121314var a = 123,    b = &quot;hah&quot;,    c = function() &amp;#123;        console.log(&quot;lol&quot;);    &amp;#125;,    d = &amp;#123;        first: &apos;hel&apos;    &amp;#125;,    e = true;toString.call(a);   // [ob">
-<meta property="og:updated_time" content="2015-12-17T13:40:43.943Z">
+<meta property="og:description" content="使用sublime的自动补全功能，但是发现meta、link等标签不能够自动闭合，百度了一下找到了解决办法：Package Settings -&amp;gt; Emmet -&amp;gt; Settings-User 添加如下代码:1&amp;#123;&amp;#10;      &amp;#34;syntaxProfiles&amp;#34;: &amp;#123;&amp;#10;          // Enable XHTML dialect f">
+<meta property="og:updated_time" content="2015-12-19T04:59:34.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript Native Code">
-<meta name="twitter:description" content="toString1234567891011121314var a = 123,    b = &quot;hah&quot;,    c = function() &amp;#123;        console.log(&quot;lol&quot;);    &amp;#125;,    d = &amp;#123;        first: &apos;hel&apos;    &amp;#125;,    e = true;toString.call(a);   // [ob">
+<meta name="twitter:title" content="sublime下的HTML标签自动补全后不能闭合">
+<meta name="twitter:description" content="使用sublime的自动补全功能，但是发现meta、link等标签不能够自动闭合，百度了一下找到了解决办法：Package Settings -&amp;gt; Emmet -&amp;gt; Settings-User 添加如下代码:1&amp;#123;&amp;#10;      &amp;#34;syntaxProfiles&amp;#34;: &amp;#123;&amp;#10;          // Enable XHTML dialect f">
   
   
     <link rel="icon" href="favicon.png">
@@ -134,8 +134,16 @@
 </aside>
 
       
-      <section id="main"><article id="post-native-code" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-sublime中的闭合HTML标签" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      
+	
+		<img src="http://www.hutchhouse.com/wp-content/uploads/2014/08/sublime-text.jpg" class="article-banner">
+	
+
+
+
     
     
     
@@ -143,7 +151,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Javascript Native Code
+      sublime下的HTML标签自动补全后不能闭合
     </h1>
   
 
@@ -151,8 +159,8 @@
           
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/native-code/">
-      <time datetime="2015-12-17T15:57:02.558Z" itemprop="datePublished">2015-12-17</time>
+    <a href="/2015/12/19/sublime中的闭合HTML标签/">
+      <time datetime="2015-12-19T04:59:34.599Z" itemprop="datePublished">2015-12-19</time>
     </a>
   </div>
 
@@ -164,19 +172,17 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <ol>
-<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
-</ol>
+        <p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/native-code/" data-id="ciiclnqsy000dqwfbyvf3l61q" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/" data-id="ciiclvlx50008hcfby2cbvakq" class="article-share-link">分享到</a>
       
-        <a href="http://wohal.github.io/2015/12/17/native-code/#disqus_thread" class="article-comment-link">评论</a>
+        <a href="http://wohal.github.io/2015/12/19/sublime中的闭合HTML标签/#disqus_thread" class="article-comment-link">评论</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
 
     </footer>
   </div>
@@ -184,15 +190,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/12/17/sublime中的闭合HTML标签/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/12/19/web-worker/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          sublime下的HTML标签自动补全后不能闭合
+          Web Worker
         
       </div>
     </a>
   
+  
+    <a href="/2015/12/19/native-code/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Javascript Native Code</div>
+    </a>
   
 </nav>
 
@@ -220,17 +231,51 @@
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/react/" class="thumbnail">
+              <a href="/2015/12/19/web-worker/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://www.deardorffdigital.com/sites/default/files/styles/single_insight_image/public/insights/webworkers.jpg?itok=WIIKQOId)" alt="Web Worker" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:23:14.149Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
+              <p class="item-date"><time datetime="2015-12-19T05:01:06.528Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/sublime中的闭合HTML标签/" class="thumbnail">
+  
+    <span style="background-image:url(https://cdn.tutsplus.com/net/uploads/legacy/1038_sublime/sublime.png)" alt="sublime下的HTML标签自动补全后不能闭合" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/sublime中的闭合HTML标签/" class="title">sublime下的HTML标签自动补全后不能闭合</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:59:34.599Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/native-code/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3)" alt="Javascript Native Code" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/native-code/" class="title">Javascript Native Code</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:57:43.416Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -239,7 +284,7 @@
             <div class="item-thumbnail">
               <a href="/2015/12/19/javascript设计模式/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://www.reindeerjob.com/files/default/2015/10-20/163134671e66882860.png?6.7.3)" alt="JavaScript设计模式" class="thumbnail-image"></span>
   
 </a>
             </div>
@@ -247,59 +292,24 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/javascript设计模式/" class="title">JavaScript设计模式</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:22:40.824Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:57:27.820Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/web-worker/" class="thumbnail">
+              <a href="/2015/12/19/react/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:20:18.595Z" itemprop="datePublished">2015-12-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/19/bubbling-capturing/" class="thumbnail">
-  
-    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
-)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
+    <span style="background-image:url(http://www.reiyukai-usa.org/wp-content/uploads/2011/02/REACT-logo.jpg)" alt="React" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/bubbling-capturing/" class="title">Bubbling and Capturing</a></p>
-              <p class="item-date"><time datetime="2015-12-19T04:19:36.146Z" itemprop="datePublished">2015-12-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/17/sublime中的闭合HTML标签/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/sublime中的闭合HTML标签/" class="title">sublime下的HTML标签自动补全后不能闭合</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:02.561Z" itemprop="datePublished">2015-12-17</time></p>
+              <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:55:03.013Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
