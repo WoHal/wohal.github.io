@@ -3,33 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Web Worker | WoHal&#39;s Blog</title>
+  <title>Archives | WoHal&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="web worker的优劣:
-优:
-可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
-可以在worker中通过importScripts(url)加载另外的脚本文件;
-可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
-可以使用XMLHttpRequ">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Web Worker">
-<meta property="og:url" content="http://wohal.github.io/2015/12/17/web-worker/index.html">
+  <meta name="description" content="FE and others">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WoHal's Blog">
+<meta property="og:url" content="http://wohal.github.io/archives/page/2/index.html">
 <meta property="og:site_name" content="WoHal's Blog">
-<meta property="og:description" content="web worker的优劣:
-优:
-可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
-可以在worker中通过importScripts(url)加载另外的脚本文件;
-可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
-可以使用XMLHttpRequ">
-<meta property="og:updated_time" content="2015-12-17T13:38:21.071Z">
+<meta property="og:description" content="FE and others">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Web Worker">
-<meta name="twitter:description" content="web worker的优劣:
-优:
-可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;
-可以在worker中通过importScripts(url)加载另外的脚本文件;
-可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();
-可以使用XMLHttpRequ">
+<meta name="twitter:title" content="WoHal's Blog">
+<meta name="twitter:description" content="FE and others">
   
   
     <link rel="icon" href="favicon.png">
@@ -149,96 +133,54 @@
 </aside>
 
       
-      <section id="main"><article id="post-web-worker" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
+      <section id="main">
+      <div class="archive-year-wrap">
+        <a href="/archives/2015" class="archive-year">2015</a>
+      </div>
+      <section class="archives-wrap">
+        <div class="archives">
     
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
     
-    
-      <header class="article-header">
-        
+    <div class="archive-article-thumbnail">
+      <a href="/2015/12/17/bubbling-capturing/" class="thumbnail">
   
-    <h1 class="article-title" itemprop="name">
-      Web Worker
+    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
+)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
+  
+</a>
+    </div>
+    
+    <header class="archive-article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/12/17/bubbling-capturing/">Bubbling and Capturing</a>
     </h1>
   
 
-        <div class="article-meta">
-          
-  <div class="article-date">
+      
+        
+  <div class="archive-article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/web-worker/">
-      <time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">2015-12-17</time>
+    <a href="/2015/12/17/bubbling-capturing/">
+      <time datetime="2015-12-17T15:57:02.553Z" itemprop="datePublished">12月 17</time>
     </a>
   </div>
 
 
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
       
-                
-        <p>web worker的优劣:</p>
-<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
-<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
-<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
-<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
-<li>可以使用XMLHttpRequest来发送请求;</li>
-<li>可以访问navigator的部分属性</li>
-</ol>
-<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
-<li>不能跨域加载JS;</li>
-<li>worker内代码不能访问DOM;</li>
-<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
-<li>不是每个浏览器都支持这个新特性</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/web-worker/" data-id="ciickzimn0006vkfbwpk8xowa" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/web-worker/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/12/19/javascript设计模式/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          JavaScript设计模式
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/12/17/sublime中的闭合HTML标签/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">sublime下的HTML标签自动补全后不能闭合</div>
-    </a>
-  
-</nav>
-
-
-  
 </article>
-
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-
-</section>
+  
+    </div></section>
+  
+      <nav id="page-nav">
+        <a class="extend prev" rel="prev" href="/archives/">&laquo; 上一页</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+      </nav>
+    </section>
       
         <aside id="sidebar">
   
@@ -388,7 +330,7 @@
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

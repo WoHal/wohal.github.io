@@ -101,7 +101,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        6
+        7
         <span>文章</span>
       </div>
       <div class="article-info-block">
@@ -134,6 +134,208 @@
 
       
       <section id="main">
+      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/hello-world/">Hello World</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/hello-world/">
+      <time datetime="2015-12-19T03:56:52.747Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/hello-world/" data-id="ciickzimx000hvkfbwgvgk7f2" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/hello-world/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="post-react" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/react/">React</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/12/19/react/">
+      <time datetime="2015-12-19T03:54:55.478Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p><a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/03/react.html</a></p>
+<ul>
+<li><p>设置state</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        value: <span class="string">'hello'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>React的组件只渲染单个根结点，如果想返回多个节点，须把它们包裹在一个节点中。</p>
+</li>
+<li><p>获取input中的值有两种方法：</p>
+<blockquote>
+<ol>
+<li>React.findDOMNode(this.refs.refName).value</li>
+<li>this.refs.refName.getDOMNode().value</li>
+<li>event.target.value</li>
+</ol>
+</blockquote>
+</li>
+<li><p>在JSX语法中，HTML中的class属性和for属性分别用className和htmlFor代替</p>
+</li>
+<li><p>在手机或平板上使用React，须<code>React.initializeTouchEvents(true);</code>来启用触摸时间处理。</p>
+</li>
+<li><p>对于props和state，props是只读属性，只能够从外部读取，state是读写属性，通过<code>setState()</code>来改变组件的状态，尽量使用props，少使用state；<br>需要设置state的情况：获取输入框的值、ajax等。</p>
+</li>
+<li><p>做细粒度的控制时，可以重写<code>shouldComponentUpdate()</code>方法返回 <strong>false</strong> 来让React跳过对子树的处理。</p>
+</li>
+<li><p><strong>默认Prop值</strong><br>React支持以声明的方式设置props的默认值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ComponentWithDefaultProps = React.createClass(&#123;</span><br><span class="line">    getDefaultProps: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        value: <span class="string">'default value'</span></span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* ... */</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>当父级没有传入props时，<code>getDefaultProps()</code>可以保证<code>this.props.value</code>有默认值，且<code>getDefaultProps</code>的结果会被<strong><em>缓存</em></strong></p>
+<ul>
+<li><p><strong>传递Props: 小技巧</strong><br>把传入组件的Props复制到对应HTML上</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> CheckLink = React.createClass(&#123;</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 这样会把 CheckList 所有的 props 复制到 &lt;a&gt;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">a</span> &#123;<span class="attribute">...this.props</span>&#125;&gt;</span>&#123;'√ '&#125;&#123;this.props.children&#125;<span class="tag">&lt;/<span class="title">a</span>&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">React.render(</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">CheckLink</span> <span class="attribute">href</span>=<span class="value">"/checked.html"</span>&gt;</span></span><br><span class="line">    Click here!</span><br><span class="line">  <span class="tag">&lt;/<span class="title">CheckLink</span>&gt;</span>,</span><br><span class="line">  document.getElementById('example')</span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>单个子级</strong><br><code>React.PropTypes.element</code> 可以限定只能有一个子级传入。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MyComponent = React.createClass(&#123;</span><br><span class="line">  propTypes: &#123;</span><br><span class="line">    children: React.PropTypes.element.isRequired</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">        &#123;this.props.children&#125; // 有且仅有一个元素，否则会抛异常。</span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Mixins</strong><br>用于解决组件与组件之间共用一些功能的问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> SetIntervalMixin = &#123;</span><br><span class="line">  componentWillMount: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.intervals = [];</span><br><span class="line">  &#125;,</span><br><span class="line">  setInterval: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.intervals.push(setInterval.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>));</span><br><span class="line">  &#125;,</span><br><span class="line">  componentWillUnmount: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.intervals.map(clearInterval);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> TickTock = React.createClass(&#123;</span><br><span class="line">  mixins: [SetIntervalMixin], <span class="comment">// 引用 mixin</span></span><br><span class="line">  getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;seconds: <span class="number">0</span>&#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  componentDidMount: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setInterval(<span class="keyword">this</span>.tick, <span class="number">1000</span>); <span class="comment">// 调用 mixin 的方法</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tick: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;seconds: <span class="keyword">this</span>.state.seconds + <span class="number">1</span>&#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">p</span>&gt;</span></span><br><span class="line">        React has been running for &#123;this.state.seconds&#125; seconds.</span><br><span class="line">      <span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">React.render(</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">TickTock</span> /&gt;</span>,</span><br><span class="line">  document.getElementById('example')</span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>关于 mixin 值得一提的优点是，如果一个组件使用了多个 mixin，并且有多个 mixin 定义了同样的生命周期方法（如：多个mixin都需要在组件销毁时做资源清理操作），所有这些生命周期方法都保证会被执行到。方法执行顺序是：首先按 mixin 引入顺序执行 mixin 里方法，最后执行组件内定义的方法。</p>
+<ul>
+<li>JSX展开属性<br>使用<strong>JSX展开属性</strong>合并现有的props和其他值。<br><code>return &lt;Component {...this.props} more=&quot;values&quot; /&gt;;</code><br>有时把所有属性都传下去是不安全或啰嗦的。这时可以使用<strong>解构赋值</strong>中的剩余属性特性来把未知属性批量提取出来。<br>列出所有要当前使用的属性，后面跟着 …other。<br><code>var { checked, ...other } = this.props;</code><br>这样能确保把所有 props 传下去，除了 那些已经被使用了的。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> FancyCheckbox = React.createClass(&#123;</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> &#123; checked, ...other &#125; = <span class="keyword">this</span>.props;</span><br><span class="line">    <span class="keyword">var</span> fancyClass = checked ? <span class="string">'FancyChecked'</span> : <span class="string">'FancyUnchecked'</span>;</span><br><span class="line">    <span class="comment">// `other` 包含 &#123; onClick: console.log &#125; 但 checked 属性除外</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">div</span> &#123;<span class="attribute">...other</span>&#125; <span class="attribute">className</span>=<span class="value">&#123;fancyClass&#125;</span> /&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line">React.render(</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">FancyCheckbox</span> <span class="attribute">checked</span>=<span class="value">&#123;true&#125;</span> <span class="attribute">onClick</span>=<span class="value">&#123;console.log.bind(console)&#125;</span>&gt;</span></span><br><span class="line">    Hello world!</span><br><span class="line">  <span class="tag">&lt;/<span class="title">FancyCheckbox</span>&gt;</span>,</span><br><span class="line">  document.body</span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注:</strong> 在编译JSX文件时，需要加上<code>--harmony</code>参数来启用ES7语法</p>
+<ul>
+<li><p>使用和传递同一个Prop</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> FancyCheckbox = React.createClass(&#123;</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> &#123; checked, title, ...other &#125; = <span class="keyword">this</span>.props;</span><br><span class="line">    <span class="keyword">var</span> fancyClass = checked ? <span class="string">'FancyChecked'</span> : <span class="string">'FancyUnchecked'</span>;</span><br><span class="line">    <span class="keyword">var</span> fancyTitle = checked ? <span class="string">'X '</span> + title : <span class="string">'O '</span> + title;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">input</span> &#123;<span class="attribute">...other</span>&#125;</span><br><span class="line">          <span class="attribute">checked</span>=<span class="value">&#123;checked&#125;</span></span><br><span class="line">          <span class="attribute">className</span>=<span class="value">&#123;fancyClass&#125;</span></span><br><span class="line">          <span class="attribute">type</span>=<span class="value">"checkbox"</span></span><br><span class="line">        /&gt;</span></span><br><span class="line">        &#123;fancyTitle&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>受限组件<br>设置了<code>value</code>的<code>input</code>是一个受限组件。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">value</span>=<span class="value">"Hello!"</span> /&gt;</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>用户在上述代码渲染出来的<code>input</code>中输入任何值都不会起作用。<br>若想更新输入的值，须使用<code>onChange</code>事件。</p>
+<ul>
+<li><p>不受限组件<br>具有<code>defaultValue</code>属性的<code>input</code>标签是不受限组件，用户的输入可以反映在元素上。<br>此外，类型为<code>checkbox</code>、<code>radio</code>的<code>&lt;input&gt;</code>支持<code>defaultChecked</code>属性，<code>select</code>支持<code>defaultValue</code>属性</p>
+</li>
+<li><p>React中的 &lt;textarea&gt;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea name=<span class="string">"description"</span> value=<span class="string">"This is a description."</span> /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>用法同<code>&lt;input&gt;</code></p>
+<ul>
+<li>动画——ReactCSSTransitionGroup<br>为了能够给它的子级应用过渡效果，<code>ReactCSSTransitionGroup</code>必须已经挂载到了DOM。下面的例子不会生效，因为<code>ReactCSSTransitionGroup</code>被挂载到新项，而不是新项被挂载到<code>ReactCSSTransitionGroup</code>里。<br><code>transitionEnter={false}</code> 进入的时候没有动画效果<br><code>transitionLeaver={false}</code> 离开的时候没有动画效果</li>
+</ul>
+<p>默认情况下<code>ReactTransitionGroup</code>渲染一个<code>span</code>。你可以通过提供一个component prop来改变这种行为。例如，以下是你将如何渲染一个<code>&lt;ul&gt;</code>：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ReactTransitionGroup component=<span class="string">"ul"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/ReactTransitionGroup&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>每一个React能渲染的DOM组件都是可用的。但是，<code>component</code>并不需要是一个DOM组件。它可以是任何你想要的React组件；甚至是你自己已经写好的！</p>
+<p>任何额外的、用户定义的属性将会成为已渲染的组件的属性。例如，以下是你将如何渲染一个带有css类的<code>&lt;ul&gt;</code>：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ReactTransitionGroup component=<span class="string">"ul"</span> className=<span class="string">"animated-list"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/ReactTransitionGroup&gt;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>双向绑定辅助工具——ReactLink<br>对于表单中存在大量输入，我们使用ReactLink来减少工作量。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> WithLink = React.createClass(&#123;</span><br><span class="line">  mixins: [React.addons.LinkedStateMixin],</span><br><span class="line">  getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;message: <span class="string">'Hello!'</span>&#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">valueLink</span>=<span class="value">&#123;this.linkState('message')&#125;</span> /&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注</strong>：对于<code>checkbox</code>，使用<code>checkedLink</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"checkbox"</span> checkedLink=&#123;<span class="keyword">this</span>.linkState(<span class="string">'booleanValue'</span>)&#125; /&gt;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>ReactLink Without ValueLink<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">var</span> WithoutLink = React.createClass(&#123;</span><br><span class="line">  mixins: [React.addons.LinkedStateMixin],</span><br><span class="line">  getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;message: <span class="string">'Hello!'</span>&#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> valueLink = <span class="keyword">this</span>.linkState(<span class="string">'message'</span>);</span><br><span class="line">    <span class="keyword">var</span> handleChange = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">      valueLink.requestChange(e.target.value);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">value</span>=<span class="value">&#123;valueLink.value&#125;</span> <span class="attribute">onChange</span>=<span class="value">&#123;handleChange&#125;</span> /&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li>ReactLink Without LinkedStateMixin<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> WithoutMixin = React.createClass(&#123;</span><br><span class="line">  getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;message: <span class="string">'Hello!'</span>&#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  handleChange: <span class="function"><span class="keyword">function</span>(<span class="params">newValue</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;message: newValue&#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> valueLink = &#123;</span><br><span class="line">      value: <span class="keyword">this</span>.state.message,</span><br><span class="line">      requestChange: <span class="keyword">this</span>.handleChange</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">valueLink</span>=<span class="value">&#123;valueLink&#125;</span> /&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>类名操作<br><code>classSet()</code>是一个简洁的工具，用于简单操作DOM中的<code>class</code>字符串。<br>对同一个场景，用classSet()和不用的对比：<br><em>不用的情况</em><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// inside some `&lt;Message /&gt;` React component</span></span><br><span class="line">render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> classString = <span class="string">'message'</span>;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.props.isImportant) &#123;</span><br><span class="line">    classString += <span class="string">' message-important'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.props.isRead) &#123;</span><br><span class="line">    classString += <span class="string">' message-read'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 'message message-important message-read'</span></span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">className</span>=<span class="value">&#123;classString&#125;</span>&gt;</span>Great, I'll be there.<span class="tag">&lt;/<span class="title">div</span>&gt;</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><em>使用<code>classSet()</code>的情况</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> cx = React.addons.classSet;</span><br><span class="line">  <span class="keyword">var</span> classes = cx(&#123;</span><br><span class="line">    <span class="string">'message'</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">'message-important'</span>: <span class="keyword">this</span>.props.isImportant,</span><br><span class="line">    <span class="string">'message-read'</span>: <span class="keyword">this</span>.props.isRead</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">// same final string, but much cleaner</span></span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">className</span>=<span class="value">&#123;classes&#125;</span>&gt;</span>Great, I'll be there.<span class="tag">&lt;/<span class="title">div</span>&gt;</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>classSet</code>也允许传递一些类名作为参数，然后拼接这些类名：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> cx = React.addons.classSet;</span><br><span class="line">  <span class="keyword">var</span> importantModifier = <span class="string">'message-important'</span>;</span><br><span class="line">  <span class="keyword">var</span> readModifier = <span class="string">'message-read'</span>;</span><br><span class="line">  <span class="keyword">var</span> classes = cx(<span class="string">'message'</span>, importantModifier, readModifier);</span><br><span class="line">  <span class="comment">// Final string is 'message message-important message-read'</span></span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">className</span>=<span class="value">&#123;classes&#125;</span>&gt;</span>Great, I'll be there.<span class="tag">&lt;/<span class="title">div</span>&gt;</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>事件系统</li>
+</ul>
+<ol>
+<li><code>onClick</code>——冒泡阶段触发；    <code>onClickCapture</code>——捕获阶段触发</li>
+<li>触摸事件<br>为了使触摸事件生效，在渲染组件之前调用<code>React.initializeTouchEvents(true);</code><br>事件名：<code>onTouchCancel onTouchEnd onTouchMove onTouchStart</code></li>
+<li>UI事件——<code>onScroll</code></li>
+<li>鼠标滚轮滚动事件——<code>onWheel</code></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://wohal.github.io/2015/12/19/react/" data-id="ciickzimn000bvkfb5m9qw6o9" class="article-share-link">分享到</a>
+      
+        <a href="http://wohal.github.io/2015/12/19/react/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
       <article id="post-javascript设计模式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -171,69 +373,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciickjp03000dksfbooznh3wy" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciickzimx000fvkfbczd7k15o" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/19/javascript设计模式/#disqus_thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/hello-world/">
-      <time datetime="2015-12-17T15:57:05.142Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/hello-world/" data-id="ciickjp03000fksfbb9ige3eq" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/hello-world/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
     </footer>
   </div>
   
@@ -290,7 +436,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/web-worker/" data-id="ciickjozt0006ksfbqb0ki31s" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/17/web-worker/" data-id="ciickzimn0006vkfbwpk8xowa" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/17/web-worker/#disqus_thread" class="article-comment-link">评论</a>
       
@@ -340,7 +486,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/" data-id="ciickjozt0008ksfbf0ykdg8v" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/" data-id="ciickzimn0008vkfbs806ci5e" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/#disqus_thread" class="article-comment-link">评论</a>
       
@@ -392,7 +538,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/native-code/" data-id="ciickjozt000bksfbh2s19sfh" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/17/native-code/" data-id="ciickzimx000dvkfb9ibrl686" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/17/native-code/#disqus_thread" class="article-comment-link">评论</a>
       
@@ -407,80 +553,9 @@
 
 
     
-      <article id="post-bubbling-capturing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/bubbling-capturing/">Bubbling and Capturing</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/bubbling-capturing/">
-      <time datetime="2015-12-17T15:57:02.553Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p><a href="http://javascript.info/tutorial/bubbling-and-capturing" target="_blank" rel="external">http://javascript.info/tutorial/bubbling-and-capturing</a><br><a href="http://www.jb51.net/article/42492.htm" target="_blank" rel="external">http://www.jb51.net/article/42492.htm</a></p>
-<h2 id="1-__u4E8B_u4EF6"><a href="#1-__u4E8B_u4EF6" class="headerlink" title="1. 事件"></a>1. 事件</h2><p>事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。<br>然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发<code>click</code>事件，即DOM元素产生了冒泡。</p>
-<h2 id="2-_u4E8B_u4EF6_u673A_u5236"><a href="#2-_u4E8B_u4EF6_u673A_u5236" class="headerlink" title="2.事件机制"></a>2.事件机制</h2><p><strong>事件捕获</strong>——父元素先触发，子元素后触发<br><strong>事件冒泡</strong>——子元素先触发，父元素后触发</p>
-<p>在早期浏览器中，Netscape中使用了<em>事件捕获</em>，Microsoft使用了<em>事件冒泡</em>。<br><img src="http://files.jb51.net/file_images/article/201310/20131028160201571.jpg" alt=""></p>
-<p>在W3C模型中将两者进行了合并，即任何事件发生时，都是先从DOM顶层开始进行事件捕获，直到事件源元素，然后再从事件源向上进行事件冒泡。<br><img src="http://javascript.info/files/tutorial/browser/events/event-order-w3c.gif" alt=""></p>
-<p>在IE9以下版本(不包含IE9)，只支持事件冒泡，<img src="http://javascript.info/files/tutorial/browser/events/event-order-bubbling.gif" alt=""><br>然后在其他浏览器都是先进行事件捕获，再进行事件冒泡。</p>
-<p>需要注意的是，IE9以下版本不支持<code>addEventListener</code>绑定事件，而是用<code>attachEvent</code>绑定事件，在使用<code>addEventListener</code>进行事件绑定时，如果不设置<code>useCapture</code>，事件的触发默认发生在冒泡阶段；当设置<code>useCapture</code>为<code>true</code>时，事件的触发发生在捕获阶段。</p>
-<h2 id="3-__u4E8B_u4EF6_u5192_u6CE1_u7684_u987A_u5E8F"><a href="#3-__u4E8B_u4EF6_u5192_u6CE1_u7684_u987A_u5E8F" class="headerlink" title="3. 事件冒泡的顺序"></a>3. 事件冒泡的顺序</h2><p>IE&lt;9：</p>
-<blockquote>
-<p>div -&gt; body -&gt; html -&gt; document</p>
-</blockquote>
-<p>IE&gt;=9   FF  others：</p>
-<blockquote>
-<p>div -&gt; body -&gt; html -&gt; document -&gt; window</p>
-</blockquote>
-<h2 id="4-__u963B_u6B62_u4E8B_u4EF6_u5192_u6CE1"><a href="#4-__u963B_u6B62_u4E8B_u4EF6_u5192_u6CE1" class="headerlink" title="4. 阻止事件冒泡"></a>4. 阻止事件冒泡</h2><p>为了阻止事件冒泡，<br>W3C标准下：</p>
-<blockquote>
-<p>event.stopPropagation()</p>
-</blockquote>
-<p>IE&lt;9：</p>
-<blockquote>
-<p>event.cancelBubble = true</p>
-</blockquote>
-<p>因此，跨浏览器解决方案如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    event = event || <span class="built_in">window</span>.event <span class="comment">// cross-browser event</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (event.stopPropagation) &#123;</span><br><span class="line">        <span class="comment">// W3C standard variant</span></span><br><span class="line">        event.stopPropagation()</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// IE variant</span></span><br><span class="line">        event.cancelBubble = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>当然也可以用一行代码来代替：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    event = event || <span class="built_in">window</span>.event <span class="comment">// cross-browser event</span></span><br><span class="line">    </span><br><span class="line">    event.stopPropagation ? event.stopPropagation() : (event.cancelBubble = <span class="literal">true</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>如果一个元素的一个事件被绑定了多个handlers，那么这些handlers彼此是独立的，事件触发时，这些handlers都会被执行，因此在绑定事件时，如果重复绑定，会带来一定的麻烦。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/bubbling-capturing/" data-id="ciickjoyz0000ksfb3p7l7t4m" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/bubbling-capturing/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
+      <nav id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+      </nav>
     </section>
       
         <aside id="sidebar">
@@ -490,6 +565,40 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/hello-world/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/hello-world/" class="title">Hello World</a></p>
+              <p class="item-date"><time datetime="2015-12-19T03:56:52.747Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/12/19/react/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
+              <p class="item-date"><time datetime="2015-12-19T03:54:55.478Z" itemprop="datePublished">2015-12-19</time></p>
+            </div>
+          </li>
         
           <li>
             
@@ -505,23 +614,6 @@
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/javascript设计模式/" class="title">JavaScript设计模式</a></p>
               <p class="item-date"><time datetime="2015-12-19T03:52:08.130Z" itemprop="datePublished">2015-12-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/17/hello-world/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/hello-world/" class="title">Hello World</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:05.142Z" itemprop="datePublished">2015-12-17</time></p>
             </div>
           </li>
         
@@ -559,23 +651,6 @@
             </div>
           </li>
         
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/2015/12/17/native-code/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/native-code/" class="title">Javascript Native Code</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:02.558Z" itemprop="datePublished">2015-12-17</time></p>
-            </div>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -587,7 +662,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -605,7 +680,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">6</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
