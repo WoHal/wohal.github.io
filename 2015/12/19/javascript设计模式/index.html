@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>WoHal&#39;s Blog</title>
+  <title>JavaScript设计模式 | WoHal&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="FE and others">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WoHal's Blog">
-<meta property="og:url" content="http://wohal.github.io/index.html">
+  <meta name="description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript设计模式">
+<meta property="og:url" content="http://wohal.github.io/2015/12/19/javascript设计模式/index.html">
 <meta property="og:site_name" content="WoHal's Blog">
-<meta property="og:description" content="FE and others">
+<meta property="og:description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
+<meta property="og:updated_time" content="2015-12-19T03:52:08.130Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WoHal's Blog">
-<meta name="twitter:description" content="FE and others">
+<meta name="twitter:title" content="JavaScript设计模式">
+<meta name="twitter:description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
   
   
     <link rel="icon" href="favicon.png">
@@ -133,8 +134,7 @@
 </aside>
 
       
-      <section id="main">
-      <article id="post-javascript设计模式" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-javascript设计模式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -142,8 +142,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/19/javascript设计模式/">JavaScript设计模式</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript设计模式
     </h1>
   
 
@@ -181,307 +181,29 @@
     </footer>
   </div>
   
-</article>
-
-
-
     
-      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/hello-world/">Hello World</a>
-    </h1>
   
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/hello-world/">
-      <time datetime="2015-12-17T15:57:05.142Z" itemprop="datePublished">2015-12-17</time>
+    <a href="/2015/12/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
     </a>
-  </div>
+  
+</nav>
 
 
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/hello-world/" data-id="ciickjp03000fksfbb9ige3eq" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/hello-world/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
 
-
-    
-      <article id="post-web-worker" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/web-worker/">Web Worker</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/web-worker/">
-      <time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">2015-12-17</time>
-    </a>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
+</section>
 
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>web worker的优劣:</p>
-<h2 id="u4F18_3A"><a href="#u4F18_3A" class="headerlink" title="优:"></a>优:</h2><ol>
-<li>可以加载一个JS进行大量的复杂计算而不挂起主进程，并通过postMessage，onmessage进行通信;</li>
-<li>可以在worker中通过importScripts(url)加载另外的脚本文件;</li>
-<li>可以使用 setTimeout(), clearTimeout(), setInterval(), and clearInterval();</li>
-<li>可以使用XMLHttpRequest来发送请求;</li>
-<li>可以访问navigator的部分属性</li>
-</ol>
-<h2 id="u52A3_3A"><a href="#u52A3_3A" class="headerlink" title="劣:"></a>劣:</h2><ol>
-<li>不能跨域加载JS;</li>
-<li>worker内代码不能访问DOM;</li>
-<li>各个浏览器对Worker的实现不大一致，例如FF里允许worker中创建新的worker,而Chrome中就不行;</li>
-<li>不是每个浏览器都支持这个新特性</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/web-worker/" data-id="ciickjozt0006ksfbqb0ki31s" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/web-worker/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-sublime中的闭合HTML标签" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/sublime中的闭合HTML标签/">sublime下的HTML标签自动补全后不能闭合</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/sublime中的闭合HTML标签/">
-      <time datetime="2015-12-17T15:57:02.561Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>使用sublime的自动补全功能，但是发现<code>meta</code>、<code>link</code>等标签不能够自动闭合，百度了一下找到了解决办法：<br>Package Settings -&gt; Emmet -&gt; Settings-User 添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;      &#34;syntaxProfiles&#34;: &#123;&#10;          // Enable XHTML dialect for HTML syntax&#10;          &#34;html&#34;: &#34;xhtml&#34;&#10;      &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/" data-id="ciickjozt0008ksfbf0ykdg8v" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/sublime中的闭合HTML标签/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-native-code" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/native-code/">Javascript Native Code</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/native-code/">
-      <time datetime="2015-12-17T15:57:02.558Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <ol>
-<li>toString<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var a = <span class="number">123</span>,</span><br><span class="line">    b = <span class="string">"hah"</span>,</span><br><span class="line">    c = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        console.log(<span class="string">"lol"</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    d = &#123;</span><br><span class="line">        first: <span class="string">'hel'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    e = <span class="literal">true</span>;</span><br><span class="line">toString.call(a);   // [object Number]</span><br><span class="line">toString.call(b);   // [object String]</span><br><span class="line">toString.call(c);   // [object Function]</span><br><span class="line">toString.call(d);   // [object Object]</span><br><span class="line">toString.call(e);   // [object Boolean]</span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/native-code/" data-id="ciickjozt000bksfbh2s19sfh" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/native-code/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-bubbling-capturing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/17/bubbling-capturing/">Bubbling and Capturing</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/bubbling-capturing/">
-      <time datetime="2015-12-17T15:57:02.553Z" itemprop="datePublished">2015-12-17</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p><a href="http://javascript.info/tutorial/bubbling-and-capturing" target="_blank" rel="external">http://javascript.info/tutorial/bubbling-and-capturing</a><br><a href="http://www.jb51.net/article/42492.htm" target="_blank" rel="external">http://www.jb51.net/article/42492.htm</a></p>
-<h2 id="1-__u4E8B_u4EF6"><a href="#1-__u4E8B_u4EF6" class="headerlink" title="1. 事件"></a>1. 事件</h2><p>事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。<br>然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发<code>click</code>事件，即DOM元素产生了冒泡。</p>
-<h2 id="2-_u4E8B_u4EF6_u673A_u5236"><a href="#2-_u4E8B_u4EF6_u673A_u5236" class="headerlink" title="2.事件机制"></a>2.事件机制</h2><p><strong>事件捕获</strong>——父元素先触发，子元素后触发<br><strong>事件冒泡</strong>——子元素先触发，父元素后触发</p>
-<p>在早期浏览器中，Netscape中使用了<em>事件捕获</em>，Microsoft使用了<em>事件冒泡</em>。<br><img src="http://files.jb51.net/file_images/article/201310/20131028160201571.jpg" alt=""></p>
-<p>在W3C模型中将两者进行了合并，即任何事件发生时，都是先从DOM顶层开始进行事件捕获，直到事件源元素，然后再从事件源向上进行事件冒泡。<br><img src="http://javascript.info/files/tutorial/browser/events/event-order-w3c.gif" alt=""></p>
-<p>在IE9以下版本(不包含IE9)，只支持事件冒泡，<img src="http://javascript.info/files/tutorial/browser/events/event-order-bubbling.gif" alt=""><br>然后在其他浏览器都是先进行事件捕获，再进行事件冒泡。</p>
-<p>需要注意的是，IE9以下版本不支持<code>addEventListener</code>绑定事件，而是用<code>attachEvent</code>绑定事件，在使用<code>addEventListener</code>进行事件绑定时，如果不设置<code>useCapture</code>，事件的触发默认发生在冒泡阶段；当设置<code>useCapture</code>为<code>true</code>时，事件的触发发生在捕获阶段。</p>
-<h2 id="3-__u4E8B_u4EF6_u5192_u6CE1_u7684_u987A_u5E8F"><a href="#3-__u4E8B_u4EF6_u5192_u6CE1_u7684_u987A_u5E8F" class="headerlink" title="3. 事件冒泡的顺序"></a>3. 事件冒泡的顺序</h2><p>IE&lt;9：</p>
-<blockquote>
-<p>div -&gt; body -&gt; html -&gt; document</p>
-</blockquote>
-<p>IE&gt;=9   FF  others：</p>
-<blockquote>
-<p>div -&gt; body -&gt; html -&gt; document -&gt; window</p>
-</blockquote>
-<h2 id="4-__u963B_u6B62_u4E8B_u4EF6_u5192_u6CE1"><a href="#4-__u963B_u6B62_u4E8B_u4EF6_u5192_u6CE1" class="headerlink" title="4. 阻止事件冒泡"></a>4. 阻止事件冒泡</h2><p>为了阻止事件冒泡，<br>W3C标准下：</p>
-<blockquote>
-<p>event.stopPropagation()</p>
-</blockquote>
-<p>IE&lt;9：</p>
-<blockquote>
-<p>event.cancelBubble = true</p>
-</blockquote>
-<p>因此，跨浏览器解决方案如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    event = event || <span class="built_in">window</span>.event <span class="comment">// cross-browser event</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (event.stopPropagation) &#123;</span><br><span class="line">        <span class="comment">// W3C standard variant</span></span><br><span class="line">        event.stopPropagation()</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// IE variant</span></span><br><span class="line">        event.cancelBubble = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>当然也可以用一行代码来代替：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    event = event || <span class="built_in">window</span>.event <span class="comment">// cross-browser event</span></span><br><span class="line">    </span><br><span class="line">    event.stopPropagation ? event.stopPropagation() : (event.cancelBubble = <span class="literal">true</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>如果一个元素的一个事件被绑定了多个handlers，那么这些handlers彼此是独立的，事件触发时，这些handlers都会被执行，因此在绑定事件时，如果重复绑定，会带来一定的麻烦。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/bubbling-capturing/" data-id="ciickjoyz0000ksfb3p7l7t4m" class="article-share-link">分享到</a>
-      
-        <a href="http://wohal.github.io/2015/12/17/bubbling-capturing/#disqus_thread" class="article-comment-link">评论</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    </section>
+</section>
       
         <aside id="sidebar">
   
@@ -631,7 +353,7 @@
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
