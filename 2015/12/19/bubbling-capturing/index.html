@@ -9,14 +9,14 @@
 1. 事件事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发click事件，即DOM元素产生">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bubbling and Capturing">
-<meta property="og:url" content="http://wohal.github.io/2015/12/17/bubbling-capturing/index.html">
+<meta property="og:url" content="http://wohal.github.io/2015/12/19/bubbling-capturing/index.html">
 <meta property="og:site_name" content="WoHal's Blog">
 <meta property="og:description" content="http://javascript.info/tutorial/bubbling-and-capturinghttp://www.jb51.net/article/42492.htm
 1. 事件事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发click事件，即DOM元素产生">
 <meta property="og:image" content="http://files.jb51.net/file_images/article/201310/20131028160201571.jpg">
 <meta property="og:image" content="http://javascript.info/files/tutorial/browser/events/event-order-w3c.gif">
 <meta property="og:image" content="http://javascript.info/files/tutorial/browser/events/event-order-bubbling.gif">
-<meta property="og:updated_time" content="2015-12-17T13:42:28.355Z">
+<meta property="og:updated_time" content="2015-12-19T04:19:36.146Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bubbling and Capturing">
 <meta name="twitter:description" content="http://javascript.info/tutorial/bubbling-and-capturinghttp://www.jb51.net/article/42492.htm
@@ -108,7 +108,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        7
+        6
         <span>文章</span>
       </div>
       <div class="article-info-block">
@@ -157,8 +157,8 @@
           
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2015/12/17/bubbling-capturing/">
-      <time datetime="2015-12-17T15:57:02.553Z" itemprop="datePublished">2015-12-17</time>
+    <a href="/2015/12/19/bubbling-capturing/">
+      <time datetime="2015-12-19T04:19:36.146Z" itemprop="datePublished">2015-12-19</time>
     </a>
   </div>
 
@@ -172,8 +172,7 @@
                 
         <p><a href="http://javascript.info/tutorial/bubbling-and-capturing" target="_blank" rel="external">http://javascript.info/tutorial/bubbling-and-capturing</a><br><a href="http://www.jb51.net/article/42492.htm" target="_blank" rel="external">http://www.jb51.net/article/42492.htm</a></p>
 <h2 id="1-__u4E8B_u4EF6"><a href="#1-__u4E8B_u4EF6" class="headerlink" title="1. 事件"></a>1. 事件</h2><p>事件是一种在页面上操作的处理，例如点击页面上的一个button，就会进行绑定在这个button上的对应操作。<br>然而，当点击了页面上的一个DOM元素时，该DOM的父元素也可能触发<code>click</code>事件，即DOM元素产生了冒泡。</p>
-<h2 id="2-_u4E8B_u4EF6_u673A_u5236"><a href="#2-_u4E8B_u4EF6_u673A_u5236" class="headerlink" title="2.事件机制"></a>2.事件机制</h2><p><strong>事件捕获</strong>——父元素先触发，子元素后触发<br><strong>事件冒泡</strong>——子元素先触发，父元素后触发</p>
-<p>在早期浏览器中，Netscape中使用了<em>事件捕获</em>，Microsoft使用了<em>事件冒泡</em>。<br><img src="http://files.jb51.net/file_images/article/201310/20131028160201571.jpg" alt=""></p>
+<h2 id="2-_u4E8B_u4EF6_u673A_u5236"><a href="#2-_u4E8B_u4EF6_u673A_u5236" class="headerlink" title="2.事件机制"></a>2.事件机制</h2><p><strong>事件捕获</strong>——父元素先触发，子元素后触发<br><strong>事件冒泡</strong>——子元素先触发，父元素后触发<br><a id="more"></a><br>在早期浏览器中，Netscape中使用了<em>事件捕获</em>，Microsoft使用了<em>事件冒泡</em>。<br><img src="http://files.jb51.net/file_images/article/201310/20131028160201571.jpg" alt=""></p>
 <p>在W3C模型中将两者进行了合并，即任何事件发生时，都是先从DOM顶层开始进行事件捕获，直到事件源元素，然后再从事件源向上进行事件冒泡。<br><img src="http://javascript.info/files/tutorial/browser/events/event-order-w3c.gif" alt=""></p>
 <p>在IE9以下版本(不包含IE9)，只支持事件冒泡，<img src="http://javascript.info/files/tutorial/browser/events/event-order-bubbling.gif" alt=""><br>然后在其他浏览器都是先进行事件捕获，再进行事件冒泡。</p>
 <p>需要注意的是，IE9以下版本不支持<code>addEventListener</code>绑定事件，而是用<code>attachEvent</code>绑定事件，在使用<code>addEventListener</code>进行事件绑定时，如果不设置<code>useCapture</code>，事件的触发默认发生在冒泡阶段；当设置<code>useCapture</code>为<code>true</code>时，事件的触发发生在捕获阶段。</p>
@@ -200,9 +199,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/17/bubbling-capturing/" data-id="ciickzilt0000vkfbll9y91fy" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/bubbling-capturing/" data-id="ciiclkgv30000xwfbmcjyve0u" class="article-share-link">分享到</a>
       
-        <a href="http://wohal.github.io/2015/12/17/bubbling-capturing/#disqus_thread" class="article-comment-link">评论</a>
+        <a href="http://wohal.github.io/2015/12/19/bubbling-capturing/#disqus_thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -213,15 +212,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/12/17/native-code/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/12/19/javascript设计模式/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          Javascript Native Code
+          JavaScript设计模式
         
       </div>
     </a>
   
+  
+    <a href="/2015/12/17/sublime中的闭合HTML标签/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">sublime下的HTML标签自动补全后不能闭合</div>
+    </a>
   
 </nav>
 
@@ -249,7 +253,7 @@
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/hello-world/" class="thumbnail">
+              <a href="/2015/12/19/web-worker/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
   
@@ -258,8 +262,8 @@
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/hello-world/" class="title">Hello World</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:56:52.747Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:20:18.595Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -276,7 +280,7 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:54:55.478Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:20:11.090Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -293,24 +297,25 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/javascript设计模式/" class="title">JavaScript设计模式</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:52:08.130Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:19:54.363Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/17/web-worker/" class="thumbnail">
+              <a href="/2015/12/19/bubbling-capturing/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
+)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/web-worker/" class="title">Web Worker</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">2015-12-17</time></p>
+              <p class="item-title"><a href="/2015/12/19/bubbling-capturing/" class="title">Bubbling and Capturing</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:19:36.146Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -360,7 +365,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 

@@ -5,16 +5,16 @@
   
   <title>JavaScript设计模式 | WoHal&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
+  <meta name="description" content="策略模式验证表单中的应用：12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273// 策略对象var strategys = &amp;#123;    isNotEmpty: funct">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript设计模式">
 <meta property="og:url" content="http://wohal.github.io/2015/12/19/javascript设计模式/index.html">
 <meta property="og:site_name" content="WoHal's Blog">
-<meta property="og:description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
-<meta property="og:updated_time" content="2015-12-19T03:52:08.130Z">
+<meta property="og:description" content="策略模式验证表单中的应用：12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273// 策略对象var strategys = &amp;#123;    isNotEmpty: funct">
+<meta property="og:updated_time" content="2015-12-19T04:19:54.363Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript设计模式">
-<meta name="twitter:description" content="策略模式验证表单中的应用：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172// 策略对象var strategys = &amp;#123;    isNotEmpty: functio">
+<meta name="twitter:description" content="策略模式验证表单中的应用：12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273// 策略对象var strategys = &amp;#123;    isNotEmpty: funct">
   
   
     <link rel="icon" href="favicon.png">
@@ -102,7 +102,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        7
+        6
         <span>文章</span>
       </div>
       <div class="article-info-block">
@@ -152,7 +152,7 @@
   <div class="article-date">
     <i class="fa fa-calendar"></i>
     <a href="/2015/12/19/javascript设计模式/">
-      <time datetime="2015-12-19T03:52:08.130Z" itemprop="datePublished">2015-12-19</time>
+      <time datetime="2015-12-19T04:19:54.363Z" itemprop="datePublished">2015-12-19</time>
     </a>
   </div>
 
@@ -165,13 +165,13 @@
       
                 
         <ol>
-<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> Validator = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.cache = [];  <span class="comment">// 保存效验规则</span></span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span>(<span class="params">dom,rules</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">rule</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strategyAry = rule.strategy.split(<span class="string">":"</span>);</span><br><span class="line">            <span class="keyword">var</span> errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                <span class="keyword">return</span> strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>, validatorFunc; validatorFunc = <span class="keyword">this</span>.cache[i++]; ) &#123;</span><br><span class="line">    <span class="keyword">var</span> msg = validatorFunc(); <span class="comment">// 开始效验 并取得效验后的返回信息</span></span><br><span class="line">    <span class="keyword">if</span>(msg) &#123;</span><br><span class="line">        <span class="keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 代码调用</span></span><br><span class="line"><span class="keyword">var</span> registerForm = <span class="built_in">document</span>.getElementById(<span class="string">"registerForm"</span>);</span><br><span class="line"><span class="keyword">var</span> validateFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> validator = <span class="keyword">new</span> Validator(); <span class="comment">// 创建一个Validator对象</span></span><br><span class="line">    <span class="comment">/* 添加一些效验规则 */</span></span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: <span class="string">'isNotEmpty'</span>,errorMsg:<span class="string">'用户名不能为空'</span>&#125;,</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'用户名长度不能小于6位'</span>&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: <span class="string">'minLength:6'</span>,errorMsg:<span class="string">'密码长度不能小于6位'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: <span class="string">'mobileFormat'</span>,errorMsg:<span class="string">'手机号格式不正确'</span>&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validator.start(); <span class="comment">// 获得效验结果</span></span><br><span class="line">    <span class="keyword">return</span> errorMsg; <span class="comment">// 返回效验结果</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点击确定提交</span></span><br><span class="line">registerForm.onsubmit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> errorMsg = validateFunc();</span><br><span class="line">    <span class="keyword">if</span>(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>策略模式<br>验证表单中的应用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 策略对象</span></span><br><span class="line"><span class="keyword">var</span> strategys = &#123;</span><br><span class="line">    isNotEmpty: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value === <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 限制最小长度</span></span><br><span class="line">    minLength: <span class="function"><span class="keyword">function</span>(<span class="params">value,length,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(value.length &lt; length) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 手机号码格式</span></span><br><span class="line">    mobileFormat: <span class="function"><span class="keyword">function</span>(<span class="params">value,errorMsg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="regexp">/(^1[3|5|8][0-9]&#123;9&#125;$)/</span>.test(value)) &#123;</span><br><span class="line">            <span class="keyword">return</span> errorMsg;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span><br><span class="line">var Validator = function()&#123;</span><br><span class="line">    this.cache = [];  // 保存效验规则</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.add = function(dom,rules) &#123;</span><br><span class="line">    var self = this;</span><br><span class="line">    for(var i = 0, rule; rule = rules[i++]; )&#123;</span><br><span class="line">        (function(rule)&#123;</span><br><span class="line">            var strategyAry = rule.strategy.split(":");</span><br><span class="line">            var errorMsg = rule.errorMsg;</span><br><span class="line">            self.cache.push(function()&#123;</span><br><span class="line">                var strategy = strategyAry.shift();</span><br><span class="line">                strategyAry.unshift(dom.value);</span><br><span class="line">                strategyAry.push(errorMsg);</span><br><span class="line">                return strategys[strategy].apply(dom,strategyAry);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)(rule);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Validator.prototype.start = function()&#123;</span><br><span class="line">    for(var i = 0, validatorFunc; validatorFunc = this.cache[i++]; ) &#123;</span><br><span class="line">    var msg = validatorFunc(); // 开始效验 并取得效验后的返回信息</span><br><span class="line">    if(msg) &#123;</span><br><span class="line">        return msg;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">// 代码调用</span><br><span class="line">var registerForm = document.getElementById("registerForm");</span><br><span class="line">var validateFunc = function()&#123;</span><br><span class="line">    var validator = new Validator(); // 创建一个Validator对象</span><br><span class="line">    /* 添加一些效验规则 */</span><br><span class="line">    validator.add(registerForm.userName,[</span><br><span class="line">        &#123;strategy: 'isNotEmpty',errorMsg:'用户名不能为空'&#125;,</span><br><span class="line">        &#123;strategy: 'minLength:6',errorMsg:'用户名长度不能小于6位'&#125;</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.password,[</span><br><span class="line">        &#123;strategy: 'minLength:6',errorMsg:'密码长度不能小于6位'&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    validator.add(registerForm.phoneNumber,[</span><br><span class="line">        &#123;strategy: 'mobileFormat',errorMsg:'手机号格式不正确'&#125;,</span><br><span class="line">    ]);</span><br><span class="line">    var errorMsg = validator.start(); // 获得效验结果</span><br><span class="line">    return errorMsg; // 返回效验结果</span><br><span class="line">&#125;;</span><br><span class="line">// 点击确定提交</span><br><span class="line">registerForm.onsubmit = function()&#123;</span><br><span class="line">    var errorMsg = validateFunc();</span><br><span class="line">    if(errorMsg)&#123;</span><br><span class="line">        alert(errorMsg);</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciickzimx000fvkfbczd7k15o" class="article-share-link">分享到</a>
+      <a data-url="http://wohal.github.io/2015/12/19/javascript设计模式/" data-id="ciiclkgw7000fxwfb4b2ibdwz" class="article-share-link">分享到</a>
       
         <a href="http://wohal.github.io/2015/12/19/javascript设计模式/#disqus_thread" class="article-comment-link">评论</a>
       
@@ -194,9 +194,9 @@
     </a>
   
   
-    <a href="/2015/12/17/web-worker/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/12/19/bubbling-capturing/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">Web Worker</div>
+      <div class="article-nav-title">Bubbling and Capturing</div>
     </a>
   
 </nav>
@@ -225,7 +225,7 @@
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/19/hello-world/" class="thumbnail">
+              <a href="/2015/12/19/web-worker/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
   
@@ -234,8 +234,8 @@
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/19/hello-world/" class="title">Hello World</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:56:52.747Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-title"><a href="/2015/12/19/web-worker/" class="title">Web Worker</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:20:18.595Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -252,7 +252,7 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/react/" class="title">React</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:54:55.478Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:20:11.090Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -269,24 +269,25 @@
             <div class="item-inner">
               <p class="item-category"></p>
               <p class="item-title"><a href="/2015/12/19/javascript设计模式/" class="title">JavaScript设计模式</a></p>
-              <p class="item-date"><time datetime="2015-12-19T03:52:08.130Z" itemprop="datePublished">2015-12-19</time></p>
+              <p class="item-date"><time datetime="2015-12-19T04:19:54.363Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/17/web-worker/" class="thumbnail">
+              <a href="/2015/12/19/bubbling-capturing/" class="thumbnail">
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <span style="background-image:url(http://files.jb51.net/file_images/article/201310/20131028160201571.jpg
+)" alt="Bubbling and Capturing" class="thumbnail-image"></span>
   
 </a>
             </div>
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2015/12/17/web-worker/" class="title">Web Worker</a></p>
-              <p class="item-date"><time datetime="2015-12-17T15:57:02.564Z" itemprop="datePublished">2015-12-17</time></p>
+              <p class="item-title"><a href="/2015/12/19/bubbling-capturing/" class="title">Bubbling and Capturing</a></p>
+              <p class="item-date"><time datetime="2015-12-19T04:19:36.146Z" itemprop="datePublished">2015-12-19</time></p>
             </div>
           </li>
         
@@ -336,7 +337,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
